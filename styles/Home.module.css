@@ -8,7 +8,27 @@ margin-top: 2.5rem;
 margin-inline: auto;
 max-width: 72rem;
 padding-inline: 1rem;
+
 }
+.cardLayout
+{
+  display: grid; 
+  grid-template-columns: repeat(1, minmax(0, 1fr));    
+  column-gap: 1.25rem;
+  row-gap: 1.25rem; 
+} 
+.card{
+ justify-content: center;
+
+}
+/* .heroImage
+{
+position: absolute;
+padding: 4rem 2rem 0 0 ;
+top:0;
+right: 0;
+} */
+
 
  /* Breakpoints:
  sm min-width:640px;
@@ -25,6 +45,12 @@ padding-inline: 1rem;
      padding-inline: 1.5rem;
      margin-top:1.5rem
    }
+   .cardLayout
+{
+  grid-template-columns: repeat(2 ,minmax(0, 1fr)); 
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
    
  }
  @media (min-width:768px){
@@ -37,10 +63,40 @@ padding-inline: 1rem;
   padding-inline: 1.6rem;
   margin-top: 1.6rem;
 }
+.cardLayout
+{
+
+
+  grid-template-columns: repeat(3 ,minmax(0, 1fr));
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+/* .heroImage{
+  right: 10%;
+  top: 20%;
+} */
  }
  @media (min-width:1024px){
-
+   .container
+   {
+     padding-inline: 2.5rem;
+   }
+   .main{
+     margin-top:5rem;
+     padding-left:2rem;
+   }
+  .cardLayout
+  {
+    grid-template-columns: repeat(3 ,minmax(0, 1fr));
+  }
  }
  @media (min-width:1280px){
+.main{
+  margin-top: 7rem;
+}
+.cardLayout
+{
+  grid-template-columns: repeat(3 ,minmax(0, 1fr));
 
+}
  }

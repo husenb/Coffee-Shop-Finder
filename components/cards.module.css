@@ -1,0 +1,26 @@
+.container
+{
+  
+    border-radius: .75rem;
+    padding-block: 0.25rem;
+    text-align: center;
+    color: white;
+   
+}
+.cardLink
+{
+    border-color: var(--text-white-100);
+    border-radius: 0.75rem;
+}
+.cardHeader
+{
+    margin-block: 1rem;
+}
+.cardImageWrapper
+{
+    padding-block: 1rem;
+    margin-block: 1rem;
+}
+.cardImage{
+border-radius: 10px;
+}

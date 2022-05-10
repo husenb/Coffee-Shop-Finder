@@ -1,0 +1,65 @@
+[
+    {
+        "id":0,
+        "name":"Himalayan Java",
+        "imgUrl": "https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "websiteUrl": "https://himalayanjava.com/",
+        "address":"Tridevi marg, Thamel Kathmandu, Nepal",
+        "neighbourhood":"Nepal Map Publisher"
+
+    },
+{
+    "id":1,
+    "name":"kar.ma coffee",
+    "imgUrl": "https://media.istockphoto.com/photos/caffee-on-table-and-blured-cafe-picture-id652628318?s=612x612",
+    "websiteUrl": "https://madeinnepal.com/",
+    "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
+    "neighbourhood":"Boudha"
+
+},
+{
+    "id":2,
+    "name":"Hussu coffee",
+    "imgUrl": "https://images.unsplash.com/photo-1619970291259-3511cbadc5b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    "websiteUrl": "https://madeinnepal.com/",
+    "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
+    "neighbourhood":"Boudha"
+
+},
+{
+    "id":3,
+    "name":"Coffe and Cool",
+    "imgUrl": "https://images.unsplash.com/photo-1549470016-3aeeaa7128f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZmZlJTIwc2hvcHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+    "websiteUrl": "https://himalayanjava.com/",
+    "address":"Tridevi marg, Thamel Kathmandu, Nepal",
+    "neighbourhood":"Nepal Map Publisher"
+
+},
+{
+    "id":4,
+    "name":"Have Some Coffee",
+    "imgUrl": "https://images.unsplash.com/photo-1502303122794-aba2d55cc873?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=631&q=80",
+    "websiteUrl": "https://himalayanjava.com/",
+    "address":"Tridevi marg, Thamel Kathmandu, Nepal",
+    "neighbourhood":"Nepal Map Publisher"
+
+},
+{
+    "id":5,
+    "name":"Wanna coffee",
+    "imgUrl": "https://images.unsplash.com/photo-1601813913455-118810e79277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "websiteUrl": "https://madeinnepal.com/",
+    "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
+    "neighbourhood":"Boudha"
+
+},
+{
+    "id":6,
+    "name":"Always Coffee",
+    "imgUrl": "https://images.unsplash.com/photo-1601813913455-118810e79277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "websiteUrl": "https://madeinnepal.com/",
+    "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
+    "neighbourhood":"Boudha"
+
+}
+]
