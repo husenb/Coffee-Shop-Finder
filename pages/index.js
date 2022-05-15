@@ -3,10 +3,19 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Banner from '../components/Banner'
 import Cards from '../components/Cards'
-import coffeeStores from '../data/coffee-stores.json'
+import coffeeStoresData from '../data/coffee-stores.json'
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      coffeeStores:coffeeStoresData
+    }, 
+  }
+}
 
 
-export default function Home() {
+export default function Home(props) {
+
   const handleOnBannerButtonClick=() => {
     console.log("Hi Banner Button Clicked")
 
@@ -25,17 +34,22 @@ export default function Home() {
         <div className={styles.heroImage}>
         {/* <Image src="/static/CoffeeDoddle-1.png" className={styles.mainImage} width={250} height={180}/> */}
         </div>  
-        <div className={styles.cardLayout}>
-      {coffeeStores.map(coffeeStore =>{
+      
+          {props.coffeeStores.length>0 && (
+          <>
+            <h2 className={styles.heading2}>Kathmandu Stores</h2>
+            <div className={styles.cardLayout}>
+      {props.coffeeStores.map(coffeeStore =>{
         return(
        <Cards 
+         key={coffeeStore.id}
          name= {coffeeStore.name} 
          imgUrl={coffeeStore.imgUrl}
         href={`/coffee-shop/${coffeeStore.id}`}  className={styles.card} />
         )})}
-   
-
       </div>
+      </>
+      )}
       </main>
       
       

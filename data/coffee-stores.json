@@ -61,5 +61,14 @@
     "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
     "neighbourhood":"Boudha"
 
+},
+{
+    "id":7,
+    "name":"Id 7",
+    "imgUrl": "https://images.unsplash.com/photo-1601813913455-118810e79277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "websiteUrl": "https://madeinnepal.com/",
+    "address":"Utpala Cafe, Pawo Gompa Marg Near, Kathmandu 44600",
+    "neighbourhood":"Boudha"
+
 }
 ]
