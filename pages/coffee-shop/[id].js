@@ -35,7 +35,9 @@ export function getStaticPaths() {
   };
 }
 const voteUpButton = () => {
-  console.log("clicked for one vote");
+  let vote =0;
+
+  
 };
 
 const CoffeeStore = (props) => {
