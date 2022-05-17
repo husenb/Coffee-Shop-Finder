@@ -3,26 +3,15 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards";
-import coffeeStoresData from "../data/coffee-stores.json";
+import { fetchCoffeeStores } from "../lib/coffe-store-data-fetch";
+// import coffeeStoresData from "../data/coffee-stores.json";
 
 export async function getStaticProps(context) {
-  console.log("Hi")
-  const options = {
-
-    method: 'GET',
-    headers: {
-      Accept: 'application/json',
-      Authorization: 'fsq30vFmjmgJBATlFVsRXrgw0lsUb1dENJebY2ZjvSlycVE='
-    }
-  };
   
-  const response= await fetch('https://api.foursquare.com/v3/places/search?query=hotel&ll=43.68241345465508%2C%20-79.40965357895736&radius=1000', options)
-   const data= await response.json()
-   console.log(data)
-   
+const coffeeStores= await fetchCoffeeStores();
   return {
     props: {
-      coffeeStores:coffeeStoresData
+      coffeeStores,
     },
   };
 }
@@ -55,10 +44,10 @@ export default function Home(props) {
               {props.coffeeStores.map((coffeeStore) => {
                 return (
                   <Cards
-                    key={coffeeStore.id}
+                    key={coffeeStore.fsq_id}
                     name={coffeeStore.name}
-                    imgUrl={coffeeStore.imgUrl}
-                    href={`/coffee-shop/${coffeeStore.id}`}
+                    imgUrl={coffeeStore.imgUrl || "https://images.unsplash.com/photo-1619970291259-3511cbadc5b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"}
+                    href={`/coffee-shop/${coffeeStore.fsq_id}`}
                     className={styles.card}
                   />
                 );
